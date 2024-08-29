@@ -37,8 +37,10 @@
           <h1 class="modal-title fs-5" style="color: aliceblue;" id="exampleModalLabel">Modal title</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          ...
+        <div class="modal-body" style="color: aliceblue;">
+          Jose Daniel Ortiz- 70077
+          <br>
+          Universidad San Buenaventura de Cali
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -59,11 +61,44 @@
                 <div class="container text-center  ">
                     <div class="row">
                         <div class="columna1">
+                            <div class="card">
+                                <div class="card-header">
+                                    Producto escalar
+                                </div>
+                                <div class="card-body">
+                                    <form action=""> <!--Punto final - punto inicial  = vector -->
+                                        <label for="">Punto A (Inicial)</label>
+                                        <span>(</span>
+                                        <input type="number" name="puntoAX" id="puntoAX" placeholder="X">
+                                        <span>,</span>
+                                        <input type="number" name="puntoAY" id="puntoAY" placeholder="Y">
+                                        <span>,</span>
+                                        <input type="number" name="puntoAZ" id="puntoAZ" placeholder="Z">
+                                        <span>)</span>
+                                        <br>
+                                        <br>
+                                        <label for="">Punto B (Final)</label>
+                                        <span>(</span>
+                                        <input type="number" name="puntoBX" id="puntoBX" placeholder="X">
+                                        <span>,</span>
+                                        <input type="number" name="puntoBY" id="puntoBY" placeholder="Y">
+                                        <span>,</span>
+                                        <input type="number" name="puntoBZ" id="puntoBZ" placeholder="Z">
+                                        <span>)</span>
+                                        <br><br>
+                                        <div class="d-grid gap-2">
+                                            <button onclick="vectormultiplicacion()" class="btn btn-primary"  type="button"  >Operar</button>
+                                        </div>
+                                        <br>
+                                        <span id="resultado">resultado</span>
+                                    </form>
+                                </div>
+                            </div>
                          </div>
                             <div class="columna2">
                                 <div class="card">
                                     <div class="card-header">
-                                        calcular un vector
+                                        Suma de un vector
                                     </div>
                                     <div class="card-body">
                                         <form action=""> <!--Punto final - punto inicial  = vector -->
@@ -87,14 +122,49 @@
                                             <span>)</span>
                                             <br><br>
                                             <div class="d-grid gap-2">
-                                                <button onclick="vector()" class="btn btn-primary"  type="button"  >Operar</button>
+                                                <button onclick="vectorsuma()" class="btn btn-primary"  type="button"  >Operar</button>
                                             </div>
+                                            <br>
+                                            <span id="resultado">resultado</span>
                                         </form>
                                     </div>
                                 </div>
                             
                              </div>
                          <div class="columna3">
+                            <div class="card">
+                                <div class="card-header">
+                                   Magnitud de un vector
+                                </div>
+                                <div class="card-body">
+                                    <form action=""> <!--Punto final - punto inicial  = vector -->
+                                        <label for="">Punto A (Inicial)</label>
+                                        <span>(</span>
+                                        <input type="number" name="puntoAX" id="puntoAX" placeholder="X">
+                                        <span>,</span>
+                                        <input type="number" name="puntoAY" id="puntoAY" placeholder="Y">
+                                        <span>,</span>
+                                        <input type="number" name="puntoAZ" id="puntoAZ" placeholder="Z">
+                                        <span>)</span>
+                                        <br>
+                                        <br>
+                                        <label for="">Punto B (Final)</label>
+                                        <span>(</span>
+                                        <input type="number" name="puntoBX" id="puntoBX" placeholder="X">
+                                        <span>,</span>
+                                        <input type="number" name="puntoBY" id="puntoBY" placeholder="Y">
+                                        <span>,</span>
+                                        <input type="number" name="puntoBZ" id="puntoBZ" placeholder="Z">
+                                        <span>)</span>
+                                        <br><br>
+                                        <div class="d-grid gap-2">
+                                            <button onclick="vector()" class="btn btn-primary"  type="button"  >Operar</button>
+                                        </div>
+                                        <br>
+                                        <span id="resultado">resultado</span>
+                                    </form>
+                                </div>
+                            </div>
                 
                          </div>
                     </div>
