@@ -68,6 +68,24 @@ function vectorproducto(){
     alert(vectorFinalproducto);
     alert(vectorresultadofinal);
 }
-vectormagnitud(){
+function vectormagnitud(){
+    let axmagnitud = parseFloat(document.getElementById("puntoAXmagnitud").value);
+    let aymagnitud= parseFloat(document.getElementById("puntoAYmagnitud").value);
+    let azmagnitud= parseFloat(document.getElementById("puntoAZmagnitud").value);
+
+    let bxmagnitud= parseFloat(document.getElementById("puntoBXmagnitud").value);
+    let bymagnitud = parseFloat(document.getElementById("puntoBYmagnitud").value);
+    let bzmagnitud= parseFloat(document.getElementById("puntoBZmagnitud").value);
     
+    let magnitudoperacion=0;
+    let magnitudfinal=0;
+    let magnitudx=(axmagnitud-bxmagnitud)**2;
+        magnitudy=(bymagnitud-aymagnitud)**2
+        magnitudz=(bzmagnitud-azmagnitud)**2
+        magnitudoperacion= magnitudx+magnitudy+magnitudz
+        magnitudfinal=Math.sqrt(magnitudoperacion);
+
+    document.getElementById("resultadomagnitud").innerHTML= magnitudfinal;
+    alert(magnitudfinal);
+ 
 }
